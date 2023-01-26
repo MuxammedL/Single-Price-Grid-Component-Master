@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    height: 218px;
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.text{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px;
+}
+.text h2{
+    margin-bottom: 20px;
+    color: hsl(179, 62%, 43%);
+}
+.green{
+    color: hsl(71, 73%, 54%);
+}
+.text .card-p{
+    margin-top: 10px;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+.cards{
+    display: flex;
+}
+.card1{
+    background-color: hsl(179, 62%, 43%);
+    height: 260px;
+    width: 318px;
+    border-bottom-left-radius: 10px;
+}
+.card1 .text h3{
+    color: #fff;
+}
+.text-p{
+    display: flex;
+    align-items: center;
+}
+.card1 .text .text-p p{
+    color: hsl(204, 43%, 93%,0.5);
+}
+.card1 .text .card1-text-1 span{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.card1 .text .card1-text-2{
+    color: hsl(0, 0%, 100%,.75);
+}
+button{
+    background-color: hsl(71, 73%, 54%);
+    border: solid hsl(71, 73%, 54%);
+    padding: 12px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    box-shadow: 0 10px 10px rgba(56, 55, 55, 0.288);
+}
+.card2{
+    background-color: hsl(179, 62%, 43%,.75);
+    width: 318px;
+    border-bottom-right-radius: 10px;
+}
+.card2 .text h3{
+    color: #fff;
+}
+.card2 .text .card2-p{
+    line-height: 1.4;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%,.6);
+}
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+@media(max-width:665px){
+    .container{
+        flex-direction: column;
+    }
+    .text{
+        padding: 25px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 310px;
+        height: 268px;
+    }
+    .card1{
+        width: 310px;
+        height: 230px;
+        border-bottom-left-radius: 0;
+    }
+    .card2{
+        border-bottom-left-radius: 10px;
+        width: 310px;
+        height: 230px;
+    }
+    .attribution{
+        font-size: 11px;
+    }
+}
